@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Rock Paper Scissors</title>
-</head>
-<body>
-    
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="./_app/immutable/assets/2.9d176b68.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.d582c5eb.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.e108d1fd.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.b60824c5.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.f2086a92.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.a21d6cee.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.cc2a4f72.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.f7da226d.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <div id="main-container" class="svelte-ipip21"><h1 class="svelte-ipip21" data-svelte-h="svelte-1dr2ito">Rock Paper Scissors</h1> <div id="game-frame" class="svelte-7lgj7n"><h2 class="svelte-7lgj7n">Round 1</h2> <p class="svelte-7lgj7n">Player: 0 - Computer: 0</p> </div> </div> 
+			
+			<script>
+				{
+					__sveltekit_950pe8 = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
 
-    <script src="javascript.js"></script>
-</body>
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.d582c5eb.js"),
+						import("./_app/immutable/entry/app.f2086a92.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
 </html>
